@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body style="background-color: #414141; color: #ffff;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul>
+            <li><img src="https://images.pexels.com/photos/18107025/pexels-photo-18107025/free-photo-of-man-reading-newspaper.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image"id="one" onclick="alert('one click')"></li>
+            <li><img src="https://images.pexels.com/photos/3532546/pexels-photo-3532546.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" id="two"></li>
+            <li><img src="https://images.pexels.com/photos/2522665/pexels-photo-2522665.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image" id="three"></li>
+            <li><img src="https://images.pexels.com/photos/1144276/pexels-photo-1144276.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image" id="four"></li>
+            <li><img src="https://images.pexels.com/photos/1144277/pexels-photo-1144277.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image" id="five" ></li>
+            <li><img src="https://images.pexels.com/photos/1115814/pexels-photo-1115814.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image" id="six"></li>
+            <li><img src="https://images.pexels.com/photos/909487/pexels-photo-909487.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image" id="seven"></li>
+            <li><img src="https://images.pexels.com/photos/570001/pexels-photo-570001.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load" alt="image" id="eight"></li>
+            <li><a style="color: rgb(113, 113, 231); font-size: 30px;"href="https://google.com">google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('one').onclick = function(){
+    //     alert("one clicked")
+    // }
+
+    // document.getElementById('one').addEventListener('click', function(){
+    //     alert("one clicked again")
+    // })
+
+    // attachEvent
+    // jQuery - on 
+    // ************* we touch three approach *  right approach is the last one *********
+
+    document.getElementById('one').addEventListener('click', function(e){
+        console.log(e)
+    })
+</script>
+</html>
