@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to my first page!! </h1>
+    <p id="firstP"></p>
+    <p id="secondP"></p>
+
+
+    <script>
+        const fruits = ["Apple", "Mango", "Orange", "Banana"];
+        document.getElementById("firstP").innerHTML = fruits;
+        // fruits[fruits.length] = "Guava";    // length
+        // fruits.splice(2, 1, "blueberry");   // Splice:- 1st index for start and 2nd for replace 
+        // fruits[fruits.length] = 'cherry';   // length:- adding in simple way  
+        document.getElementById("secondP").innerHTML = fruits;
+    </script>
+</body>
+</html>
